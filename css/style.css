@@ -1,0 +1,62 @@
+:root {
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-cuerpo: 'Inter', sans-serif;
+    --color-acento: #0d6efd; /* El azul de Bootstrap, o cámbialo a tu gusto */
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    line-height: 1.6; /* Hace que el texto no se vea amontonado */
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    letter-spacing: -0.5px; /* Un truco pro para que los títulos se vean más compactos y modernos */
+}
+
+/* Un detalle para que los enlaces del menú se vean mejor */
+.nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Esto crea un efecto de degradado solo en el texto de tu marca */
+}
+/* Estilo para que el Carrusel no ocupe toda la pantalla y se vea nítido */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.7); /* Para que el texto blanco resalte más */
+}
+
+.carousel-caption {
+    padding: 20px;
+    bottom: 20%;
+}
+
+.display-3 {
+    margin-top: 2rem;
+    color: var(--color-primario);
+}
+/* Estilo para el Aside */
+aside .card {
+    transition: transform 0.3s ease;
+    border-left: 5px solid var(--color-primario) !important; /* Le da un toque de color lateral */
+}
+
+aside .card:hover {
+    transform: translateY(-5px); /* Pequeña animación al pasar el mouse */
+}
+
+aside h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+}
